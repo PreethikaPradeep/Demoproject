@@ -2,6 +2,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<div class='container mt-5 p-5  mx-auto w-50' style="margin-bottom:100px;">
+<div class="card text-center">
+  <div class="card-header">
+    PAYMENT
+  </div>
+  <div class="card-body bg-dark">
+
+
+    <a href="#" class="">
 
 <form action="{% url 'cart:payment_status' payment.name %}" method="POST">
 <script
@@ -18,6 +27,7 @@
     data-prefill.email="gaurav.kumar@example.com"
     data-theme.color="#F37254"
 ></script>
-<input type="hidden" custom="Hidden Element" name="hidden"/>
-</form>
+        <input type="hidden" custom="Hidden Element" name="hidden"/>
+</form></div></a>
+  </div></div>
 {% endblock %}

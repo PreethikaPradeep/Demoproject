@@ -143,7 +143,7 @@ def payment_status(request,u):
 
         except:
             pass
-
+    return render(request, 'payment_status.html', {'status': status})
 @login_required
 def order_view(request):
     u=request.user
@@ -152,7 +152,7 @@ def order_view(request):
     return render(request,'order_view.html',context)
 
 
-    return render(request,'payment_status.html',{'status':status})
+
 
 
 
